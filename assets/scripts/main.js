@@ -6,7 +6,7 @@ const originalView = "0 0 1282.92 1243.61";
 function zoomIn(province) {
   const s = province.getBBox();
   const newView = `${s.x} ${s.y} ${s.width} ${s.height}`;
-  tl = new TimelineMax();
+  const tl = new TimelineMax();
 
   tl.add("zIn");
   tl.fromTo(map, 1, {
