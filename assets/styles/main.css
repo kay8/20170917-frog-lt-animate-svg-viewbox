@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Rubik', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-size-adjust: 100%;
@@ -26,6 +26,7 @@ h4,
 h5,
 h6 {
   font-weight: lighter;
+  margin: 0;
 }
 
 p {
@@ -34,11 +35,6 @@ p {
 
 a {
   text-decoration: none;
-}
-
-input[type='radio'],
-input[type='checkbox'] {
-  margin-right: 6px;
 }
 
 textarea,
@@ -62,6 +58,7 @@ img {
   height: auto;
   display: block;
   vertical-align: middle;
+  opacity: 0.2;
 }
 
 blockquote {
@@ -72,28 +69,33 @@ figure {
   margin: 0;
 }
 
-img {
+.province-img {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
   height: 100%;
   object-fit: cover;
   display: none;
 }
 
-svg {
+.svg-map {
+  position: relative;
   width: auto;
   height: 90vh;
   margin: 0 auto;
-  padding: 30px;
+  padding: 30px 10px;
   display: block;
 }
 
-path {
+.svg-map path {
   fill: transparent;
   stroke: #fff;
 }
+
+.is-active-area path {
+  stroke: red;
+}
+
 
 .container {
   background-color: #607D8B;
@@ -101,3 +103,19 @@ path {
   height: 100%;
   min-height: 100vh;
 }
+
+.btn-close {
+  position: relative;
+  z-index: 2;
+}
+
+.copy-right {
+  font-size: 1.2em;
+}
+
+.copy-right__link {
+  color: #6fc173;
+  opacity: 1;
+  text-decoration: none;
+}
+
