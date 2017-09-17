@@ -1,3 +1,5 @@
+(function() {
+
 const map = document.getElementById("map");
 const originalView = "0 0 1282.92 1243.61";
 
@@ -51,3 +53,5 @@ close.addEventListener("click", function() {
   document.querySelector("img.is-active").classList.remove("is-active");
   document.querySelector(".is-active-area").classList.remove("is-active-area");
 }, false);
+
+})();
