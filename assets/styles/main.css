@@ -1,0 +1,103 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-size-adjust: 100%;
+  line-height: 1.4;
+  margin: 0;
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: lighter;
+}
+
+p {
+  margin: 0 0 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+input[type='radio'],
+input[type='checkbox'] {
+  margin-right: 6px;
+}
+
+textarea,
+button,
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  font-size: 100%;
+  padding: 0;
+}
+
+img {
+  /*max-width: 100%;*/
+  width: 100%;
+  height: auto;
+  display: block;
+  vertical-align: middle;
+}
+
+blockquote {
+  padding: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+}
+
+svg {
+  width: auto;
+  height: 90vh;
+  margin: 0 auto;
+  padding: 30px;
+  display: block;
+}
+
+path {
+  fill: transparent;
+  stroke: #fff;
+}
+
+.container {
+  background-color: #607D8B;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+}
